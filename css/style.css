@@ -4,6 +4,20 @@ html, body {
 section {
 	padding: 80px 0;
 }
+.about_content {
+	overflow: hidden;
+	padding: 0px 100px;
+	margin: 0 auto;
+}
+.about_content video {
+	width: 50%;
+	float: left;
+	margin-right: 40px!important;
+	margin-bottom: 20px;
+}
+.about_content p {
+	width: 100%;
+}
 .bottom-margin {
 	padding-bottom: 30px!important;
 }
@@ -16,25 +30,33 @@ ol {
 }
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
-  	width: 90%;
+  	width: 30%;
   	margin: 0 auto;
-  	height: 100%;
+  	height: 30%;
 }
 .occupations_contents {
 	margin-bottom: 30px;
 }
-/* .occupations_contents img {
-	width: 100%;
-} */
 .occupations_contents h3 {
 	color: #C22035;
 	font-size: 18px;
 	margin-top: 0px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+	#myVideo {
+	  	width: 40%;
+	  	margin: 0 auto;
+	  	height: 40%;
+	}
+	.about_content {
+		padding: 0px 60px;
+	}
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
 	#myVideo {
-	  	width: 100%;
+	  	width: 45%;
 	  	margin: 0 auto;
+	  	height: 45%;
 	}
 	.navbar-custom {
 		padding-bottom: 100px!important;
@@ -49,7 +71,9 @@ ol {
 		top: 45px;
 		left: 20px;
 	}
-
+	.about_content {
+		padding: 0px 20px;
+	}
 }
 
 #testimonials hr {
@@ -77,5 +101,13 @@ ol {
 	.for-centering img {
 		width: 100%;
 		margin: 0 auto;
+	}
+	#myVideo {
+	  	width: 50%;
+	  	margin: 0 auto;
+	  	height: 50%;
+	}
+	.about_content {
+		padding: 0px 15px;
 	}
 }
